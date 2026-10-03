@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# SQLite database
+db.sqlite3
+*.sqlite3
+
+# Uploaded photos (user content, not source code)
+media/
+
+# Secrets and local settings
+.env
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
