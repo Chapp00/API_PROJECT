@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Lost & Found</title>
+</head>
+
+<body>
+    <h1>Welcome to Campus Lost & Found</h1>
+
+    <p1>Report Lost Items</p1>
+
+    <a href="/items/">Browse Items</a>
+    
+    <nav>
+        <a href="{% url 'item_list' %}">Items</a>
+        <a href="/admin/">Admin</a>
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

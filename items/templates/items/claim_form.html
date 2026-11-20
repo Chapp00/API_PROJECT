@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Claim Item</h2>
+
+<p>Item: {{ item.name }}</p>
+<p>Location: {{ item.location }}</p>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Submit Claim</button>
+
+</form>
+
+{% endblock %}

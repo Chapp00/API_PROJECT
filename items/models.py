@@ -96,5 +96,13 @@ class Claim(models.Model):
         auto_now_add=True
     )
 
+class Meta:
+    constraints = [
+        models.UniqueConstraint(
+            fields=['item', 'claimant'],
+            name='unique_claim_per_user'
+        )
+    ]
+
     def __str__(self):
         return f"{self.claimant.username} - {self.item.name}"
